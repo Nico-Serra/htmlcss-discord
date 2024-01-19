@@ -15,6 +15,10 @@ body{
 
 }
 
+h1{
+    padding: 1rem;
+}
+
 /* #endregion common */
 
 /* #region header */
@@ -74,20 +78,47 @@ body{
 
 #site_main {}
 
-.first {
-    display: flex;
+.jumbotron {
     padding: 2rem 0;
-    background-color: blue;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
 }
 
-.block {
-    height: 150px;
-    width: 50%;
-    background-color: blueviolet;
+.jumbo {
+    width: 60%;
     margin: auto;
-    border: 1px dashed black;
-    border-radius: 0.5rem;
+}
 
+.description{
+    padding-bottom: 1rem;
+
+}
+
+.download{
+    padding-bottom: 6rem;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+}
+
+.mac{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 2rem;
+    padding: 0.8rem;
+    font-weight: bold;
+}
+
+.open{
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 2rem;
+    padding: 0.8rem;
 }
 
 .second {
