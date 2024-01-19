@@ -8,6 +8,7 @@
 :root{
     --discord-primary: rgba(49, 97, 224, 1);
     --discord-dark: rgba(35, 39, 42, 1);
+    --discord-light: rgba(246, 246, 246, 1);
 }
 
 body{
@@ -17,6 +18,16 @@ body{
 
 h1{
     padding: 1rem;
+}
+
+h2{
+    font-size: xx-large;
+}
+
+p{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
 }
 
 /* #endregion common */
@@ -78,6 +89,8 @@ h1{
 
 #site_main {}
 
+/* #region jumbotron */
+
 .jumbotron {
     padding: 2rem 0;
     background-image: url(../img/jumbo.png);
@@ -90,11 +103,6 @@ h1{
 .jumbo {
     width: 60%;
     margin: auto;
-}
-
-.description{
-    padding-bottom: 1rem;
-
 }
 
 .download{
@@ -121,26 +129,31 @@ h1{
     padding: 0.8rem;
 }
 
-.second {
+/* #endregion jumbotron */
+
+.study-group {
     display: flex;
-    background-color: white;
     justify-content: center;
     padding: 2rem 0;
+    align-items: center;
 }
 
 .block_big {
-    width: 40%;
-    background-color: cadetblue;
-    height: 400px;
-    border: 1px dashed black;
+    width: 60%;
+    
+}
+
+.item{
+    width: 80%;
 }
 
 .block_small {
     width: 20%;
-    background-color: pink;
-    height: 400px;
-    border: 1px dashed black;
+}
 
+.wave{
+    width: 100%;
+    background: white;
 }
 
 .second_2{
