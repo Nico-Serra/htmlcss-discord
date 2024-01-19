@@ -24,6 +24,12 @@ h2{
     font-size: xx-large;
 }
 
+h3{
+    background-image: url(../img/stars.svg);
+    text-align: center;
+    background-size: contain;
+}
+
 p{
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -131,6 +137,7 @@ p{
 
 /* #endregion jumbotron */
 
+ /* #region study-group */
 .study-group {
     display: flex;
     justify-content: center;
@@ -152,41 +159,104 @@ p{
 }
 
 .wave{
-    width: 100%;
-    background: white;
+    width: 120%;
+    border-bottom: 1 px solid var(--discord-primary);
+    background-color: var(--discord-light);
 }
 
-.second_2{
+ /* #endregion study-group */
+ 
+ /* #region meet */
+.meet{
     display: flex;
     flex-direction: row-reverse;
-    background-color: lightgray;
-    justify-content: center;
-    padding: 1rem 0;
-}
-
-.third{
-    display: flex;
-    background-color: lightgray;
-    justify-content: center;
-    padding: 1rem 0;
-
-}
-
-.block_square{
-    height: 500px;
-    width: 60%;
-    background-color: green;
+    background-color: var(--discord-light);
     margin: auto;
-    border: 1px dashed black;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
 }
 
+.room{
+    width: 60%;
+}
+
+.place{
+    width: 20%;
+}
+
+.item2{
+    width: 100%;
+    align-self: flex-end;
+}
+
+.wave2{
+    width: 120%;
+    border-bottom: 1 px solid var(--discord-primary);
+    background-color: white;
+}
+
+ /* #endregion meet */
+
+ /* #region fandom */
+.fandom{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+    align-items: center;
+}
+
+.item3{
+    width: 100%;
+}
+
+ /* #endregion fandom */
+
+  /* #region tech */
+
+.tech{
+    display: flex;
+    background-color: var(--discord-light);
+    justify-content: center;
+    padding: 1rem 0;
+    margin: auto;
+    text-align: center;
+
+}
+
+.device{
+    width: 80%;
+    background-color: var(--discord-light);
+    margin: auto;
+}
+
+.item4{
+    width: 100%;
+}
+
+.text{
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 2rem;
+}
+
+.scarica{
+    padding: 0.8rem;
+    background-color: var(--discord-primary);
+    color: white;
+    border-radius: 1rem;
+    border: 1px solid var(--discord-primary);
+}
+
+  /* #endregion tech */
 
 /* #endregion main */
 
 /* #region footer */
 #site_footer {
     padding-top: 0.5rem;
-    background-color: darkslategrey;
+    background-color: var(--discord-dark);
 }
 
 .container_f{
