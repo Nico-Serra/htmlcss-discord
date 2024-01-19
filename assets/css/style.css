@@ -1,34 +1,71 @@
+/* #region common */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-body {
-    margin: 0;
+:root{
+    --discord-primary: rgba(49, 97, 224, 1);
+    --discord-dark: rgba(35, 39, 42, 1);
 }
+
+body{
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+/* #endregion common */
 
 /* #region header */
 #site_header {
-    height: 50px;
-    background-color: aquamarine;
+    background-color: var(--discord-primary);
     padding: 1rem;
 }
 
 .container_h {
-    background-color: orange;
-    width: 60%;
+    
+    width: 80%;
     margin: auto;
     display: flex;
-    justify-content: space-around;
-    border: 1px dashed black;
+    align-items: center;
+    
+}
+
+.logo{
+    text-align: start;
+    flex-grow: 1;
+    
+}
+
+.logo1{
+    vertical-align: middle;
 }
 
 .links{
     display: flex;
-    border: 1px dashed black;
-    padding: 0 1rem;
+    align-items: center;
+    flex-grow: 2;
+    justify-content: space-between;
+    color: white;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+.login{
+    text-align: end;
+    flex-grow: 1;
+    vertical-align: middle;
+}
+
+.accedi{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 2rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 0.5rem;
+
 }
 
 /* #endregion header */
