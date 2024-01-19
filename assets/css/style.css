@@ -9,6 +9,7 @@
     --discord-primary: rgba(49, 97, 224, 1);
     --discord-dark: rgba(35, 39, 42, 1);
     --discord-light: rgba(246, 246, 246, 1);
+    --discord-accent: rgba(89, 107, 164, 1);
 }
 
 body{
@@ -34,6 +35,16 @@ p{
     padding-top: 1rem;
     padding-bottom: 1rem;
 
+}
+
+ul{
+    list-style: none;
+    
+}
+
+li{
+    color: white;
+ 
 }
 
 /* #endregion common */
@@ -159,9 +170,9 @@ p{
 }
 
 .wave{
-    width: 120%;
-    border-bottom: 1 px solid var(--discord-primary);
-    background-color: var(--discord-light);
+    width: 100;
+    height: 100px;
+    background-image: url(../img/wave2.svg);
 }
 
  /* #endregion study-group */
@@ -191,9 +202,10 @@ p{
 }
 
 .wave2{
-    width: 120%;
-    border-bottom: 1 px solid var(--discord-primary);
-    background-color: white;
+    width: 100%;
+    height: 100px;
+    background-image: url(../img/wave.svg);
+    background-color: var(--discord-light);
 }
 
  /* #endregion meet */
@@ -221,7 +233,7 @@ p{
     padding: 1rem 0;
     margin: auto;
     text-align: center;
-
+    padding-bottom: 5rem;
 }
 
 .device{
@@ -255,49 +267,60 @@ p{
 
 /* #region footer */
 #site_footer {
-    padding-top: 0.5rem;
+    padding-top: 4rem;
     background-color: var(--discord-dark);
 }
 
 .container_f{
     display: flex;
-    justify-content: center;
-    padding-bottom: 2rem ;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--discord-accent);
+    align-items: flex-start;
+    padding-bottom: 2rem;
+
+
 }
 
 .social{
-    background-color: mediumorchid;
-    width: 20%;
+    flex-grow: 2;
     height: 250px;
-    border: 1px dashed white;
+    color: white;
 }
 
+.purple{
+    color: var(--discord-accent);
+}
+
+
 .info{
-    background-color: mediumaquamarine;
     width: 10%;
-    height: 250px;
-    border: 1px dashed white;
+    flex-grow: 1;
+    
+    
 }
 
 .end{
     padding: 1rem 0;
 }
 .line {
-    background-color: mediumaquamarine;
-    width: 60%;
+    width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    padding: 1rem 0;
+}
+.italy{
+    width: 10%;
 }
 
-.buttons{
-    border: 1px dashed black;
-}
-
-hr{
-    margin-left: 20%;
-    margin-right: 20%;
+.button_end{
+    border: 1px solid var(--discord-accent);
+    background-color: var(--discord-accent);
+    color: white;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    
 }
 
 /* #endregion footer */
